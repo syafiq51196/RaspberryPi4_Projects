@@ -1,0 +1,34 @@
+sudo apt update
+sudo apt upgrade
+
+# Create an Amazon developer account. 
+## https://developer.amazon.com/login.html
+
+# Create a product
+## https://developer.amazon.com/avs/home.html#/avs/home
+
+# download config.json
+## Save the file to your /home/pi directory. 
+## If you are creating this profile from a different PC, 
+## you must transfer it to your Raspberry Pi. 
+
+wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/setup.sh 
+wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/genConfig.sh 
+wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/pi.sh
+
+sudo apt-get install libcurl4-openssl-dev
+
+reboot 
+
+cd /home/pi/ 
+sudo bash setup.sh config.json [-s 1234] 
+
+cd /home/pi/ 
+sudo bash startsample.sh 
+
+# Submit your Authorization Code
+## Go to amazon.com/us/code. Use any internet-connected device (for example, your phone).
+## Log in with your Amazon developer credentials.
+## Enter the authorization code, provided by your sample app, into the authorization box.
+
+sudo bash startsample.sh 
