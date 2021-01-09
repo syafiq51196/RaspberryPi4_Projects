@@ -32,3 +32,6 @@ sudo bash startsample.sh
 ## Enter the authorization code, provided by your sample app, into the authorization box.
 
 sudo bash startsample.sh 
+
+# Set Device Location
+## https://alexa.amazon.com/spa/index.html#welcome
