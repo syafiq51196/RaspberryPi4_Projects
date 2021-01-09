@@ -35,8 +35,3 @@ sudo bash startsample.sh
 
 # Set Device Location
 ## https://alexa.amazon.com/spa/index.html#welcome
-
-# Indicate Device State with Sounds
-## https://developer.amazon.com/alexa/console/avs/previews/resources
-
-
